@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QBO API Callback</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+      textarea { width: 100%; max-width: 900px; min-height: 7rem; }
+    </style>
+  </head>
+  <body>
+    <h1>QuickBooks Authorization Callback</h1>
+    <p>Authorization returned to this internal app callback page. Copy the full URL below and paste it into the local authorization script.</p>
+    <textarea id="callback-url" readonly></textarea>
+    <script>
+      document.getElementById("callback-url").value = window.location.href;
+    </script>
+  </body>
+</html>
